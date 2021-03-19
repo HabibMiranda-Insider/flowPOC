@@ -25,9 +25,15 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       
+      # Install node-modules via npm
       - name: Install node modules
         run: |
           npm install
+          
+      # Run unit tests
+      - name: Run Unit Tests
+        run: |
+          npm jest
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
