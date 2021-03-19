@@ -33,7 +33,7 @@ jobs:
       # Run unit tests
       - name: Run Unit Tests
         run: |
-          npm jest
+          npm test
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
